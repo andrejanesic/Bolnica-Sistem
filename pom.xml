@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>rs.raf</groupId>
-	<artifactId>UI-P2-andreja_nesic</artifactId>
+	<artifactId>[UI] P2 andreja_nesic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>UI-P2-andreja_nesic</name>
+	<name>[UI] P2 andreja_nesic</name>
 	<description>Drugi projekat iz UI.</description>
 	<properties>
 		<java.version>1.8</java.version>
