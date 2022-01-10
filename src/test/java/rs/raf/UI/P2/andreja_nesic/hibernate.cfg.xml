@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/ui_p2</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Blok"/>
+      <mapping class="rs.raf.UI.P2.andreja_nesic.model.Covid"/>
+      <mapping class="rs.raf.UI.P2.andreja_nesic.model.CovidLek"/>
+      <mapping class="rs.raf.UI.P2.andreja_nesic.model.Dezurstvo"/>
+      <mapping class="rs.raf.UI.P2.andreja_nesic.model.Dijagonza"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Lek"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.LekRecept"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Lekar"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.LekarOdeljenje"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Obuka"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Odeljenje"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Odmor"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Osiguranje"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Pacijent"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.PacijentLek"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Prekovremeno"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Prijem"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Procedura"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.ProceduraZaposleni"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.ProceduraRecept"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Racunovodja"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Recept"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.ReceptLekar"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Sestra"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Soba"/>
+    <mapping class="rs.raf.UI.P2.andreja_nesic.model.Zaposleni"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
