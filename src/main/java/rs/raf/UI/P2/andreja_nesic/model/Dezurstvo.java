@@ -14,15 +14,15 @@ public class Dezurstvo {
     private int dezurstvoId;
 
     @Basic
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private Date pocetak;
 
     @Basic
-    @Column(name = "kraj")
+    @Column(name = "kraj", nullable = false)
     private Date kraj;
 
     @ManyToOne
-    @JoinColumn(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     public int getDezurstvoId() {

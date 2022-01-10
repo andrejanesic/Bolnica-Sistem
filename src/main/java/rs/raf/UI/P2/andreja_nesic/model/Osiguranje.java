@@ -13,15 +13,15 @@ public class Osiguranje {
     private int osiguranjeId;
 
     @Basic
-    @Column(name = "tip")
+    @Column(name = "tip", nullable = false)
     private String tip;
 
     @Basic
-    @Column(name = "broj")
+    @Column(name = "broj", nullable = false)
     private String broj;
 
     @ManyToOne
-    @JoinColumn(name = "pacijent_id")
+    @JoinColumn(name = "pacijent_id", referencedColumnName = "pacijent_id")
     private Pacijent pacijent;
 
     public String getTip() {

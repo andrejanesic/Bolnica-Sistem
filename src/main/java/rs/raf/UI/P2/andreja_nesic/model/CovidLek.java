@@ -12,12 +12,12 @@ public class CovidLek {
 
     @ManyToOne
     @MapsId("lekId")
-    @JoinColumn(name = "lek_id")
+    @JoinColumn(name = "lek_id", referencedColumnName = "lek_id")
     private Lek lek;
 
     @ManyToOne
     @MapsId("covidId")
-    @JoinColumn(name = "covid_id")
+    @JoinColumn(name = "covid_id", referencedColumnName = "covid_id")
     private Covid covid;
 
     public Covid getCovid() {

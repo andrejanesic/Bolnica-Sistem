@@ -12,12 +12,12 @@ public class LekRecept {
 
     @ManyToOne
     @MapsId("receptId")
-    @JoinColumn(name = "recept_id")
+    @JoinColumn(name = "recept_id", referencedColumnName = "recept_id")
     private Recept recept;
 
     @ManyToOne
     @MapsId("lekId")
-    @JoinColumn(name = "lek_id")
+    @JoinColumn(name = "lek_id", referencedColumnName = "lek_id")
     private Lek lek;
 
     public LekReceptPK getId() {

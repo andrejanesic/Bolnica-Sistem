@@ -12,17 +12,17 @@ public class Blok {
     @Column(name = "blok_id")
     private int blokId;
 
-    @Column(name = "kod")
+    @Column(name = "kod", unique = true, nullable = false)
     private String kod;
 
-    @Column(name = "ime")
+    @Column(name = "ime", nullable = false)
     private String ime;
 
-    @Column(name = "sprat")
+    @Column(name = "sprat", nullable = false)
     private int sprat;
 
     @ManyToOne
-    @JoinColumn(name = "odeljenje_id")
+    @JoinColumn(name = "odeljenje_id", referencedColumnName = "odeljenje_id")
     private Odeljenje odeljenje;
 
     public int getBlokId() {

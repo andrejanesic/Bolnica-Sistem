@@ -13,15 +13,15 @@ public class Recept {
     private int receptId;
 
     @Basic
-    @Column(name = "doza")
+    @Column(name = "doza", nullable = false)
     private int doza;
 
     @Basic
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private int pocetak;
 
     @Basic
-    @Column(name = "trajanje")
+    @Column(name = "trajanje", nullable = false)
     private int trajanje;
 
     @Basic
@@ -29,7 +29,7 @@ public class Recept {
     private boolean obnavljajuci;
 
     @ManyToOne
-    @JoinColumn(name = "pacijent_id")
+    @JoinColumn(name = "pacijent_id", referencedColumnName = "pacijent_id")
     private Pacijent pacijent;
 
     public int getReceptId() {

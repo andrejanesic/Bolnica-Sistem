@@ -13,23 +13,23 @@ public class Lek {
     private int lekId;
 
     @Basic
-    @Column(name = "naziv")
+    @Column(name = "naziv", nullable = false)
     private String naziv;
 
     @Basic
-    @Column(name = "proizvodjac")
+    @Column(name = "proizvodjac", unique = true, nullable = false)
     private String proizvodjac;
 
     @Basic
-    @Column(name = "grupa")
+    @Column(name = "grupa", nullable = false)
     private String grupa;
 
     @Basic
-    @Column(name = "tip")
+    @Column(name = "tip", nullable = false)
     private String tip;
 
     @Basic
-    @Column(name = "sastav")
+    @Column(name = "sastav", nullable = false)
     private String sastav;
 
     public int getLekId() {

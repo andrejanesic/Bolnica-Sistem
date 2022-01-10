@@ -9,11 +9,11 @@ import java.util.Objects;
 public class Sestra extends Zaposleni {
 
     @Basic
-    @Column(name = "pozicija")
+    @Column(name = "pozicija", nullable = false)
     private String pozicija;
 
     @Basic
-    @Column(name = "licenca")
+    @Column(name = "licenca", nullable = false)
     private byte licenca;
 
     public String getPozicija() {

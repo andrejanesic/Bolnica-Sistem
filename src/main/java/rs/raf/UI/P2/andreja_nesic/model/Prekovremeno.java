@@ -14,15 +14,15 @@ public class Prekovremeno {
     private int prekovremenoId;
 
     @Basic
-    @Column(name = "datum")
+    @Column(name = "datum", nullable = false)
     private Date datum;
 
     @Basic
-    @Column(name = "trajanje")
+    @Column(name = "trajanje", nullable = false)
     private int trajanje;
 
     @ManyToOne
-    @JoinColumn(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     public int getPrekovremenoId() {

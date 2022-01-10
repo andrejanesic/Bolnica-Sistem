@@ -14,7 +14,7 @@ public class Prijem {
     private int prijemId;
 
     @Basic
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private Date pocetak;
 
     @Basic
@@ -22,15 +22,15 @@ public class Prijem {
     private Date kraj;
 
     @ManyToOne
-    @JoinColumn(name = "pacijent_id")
+    @JoinColumn(name = "pacijent_id", referencedColumnName = "pacijent_id")
     private Pacijent pacijent;
 
     @ManyToOne
-    @JoinColumn(name = "soba_id")
+    @JoinColumn(name = "soba_id", referencedColumnName = "soba_id")
     private Soba soba;
 
     @ManyToOne
-    @JoinColumn(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     public int getPrijemId() {

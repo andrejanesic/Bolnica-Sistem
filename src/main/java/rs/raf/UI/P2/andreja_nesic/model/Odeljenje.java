@@ -13,11 +13,11 @@ public class Odeljenje {
     private int odeljenjeId;
 
     @Basic
-    @Column(name = "ime")
+    @Column(name = "ime", unique = true)
     private int ime;
 
     @ManyToOne
-    @JoinColumn(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     public int getOdeljenjeId() {

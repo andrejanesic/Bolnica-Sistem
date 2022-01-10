@@ -14,11 +14,11 @@ public class Procedura {
     private int proceduraId;
 
     @Basic
-    @Column(name = "tip")
+    @Column(name = "tip", nullable = false)
     private String tip;
 
     @Basic
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private Date pocetak;
 
     @Basic
@@ -26,15 +26,15 @@ public class Procedura {
     private Date kraj;
 
     @Basic
-    @Column(name = "ime")
+    @Column(name = "ime", nullable = false)
     private String ime;
 
     @ManyToOne
-    @JoinColumn(name = "pacijent_id")
+    @JoinColumn(name = "pacijent_id", referencedColumnName = "pacijent_id")
     private Pacijent pacijent;
 
     @ManyToOne
-    @JoinColumn(name = "soba_id")
+    @JoinColumn(name = "soba_id", referencedColumnName = "soba_id")
     private Soba soba;
 
     public int getProceduraId() {

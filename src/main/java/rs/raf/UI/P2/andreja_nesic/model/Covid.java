@@ -13,14 +13,14 @@ public class Covid {
     @Column(name = "covid_id")
     private int covidId;
 
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private Date pocetak;
 
     @Column(name = "kraj")
     private Date kraj;
 
     @ManyToOne
-    @JoinColumn(name = "pacijent_id")
+    @JoinColumn(name = "pacijent_id", referencedColumnName = "pacijent_id")
     private Pacijent pacijent;
 
     public int getCovidId() {

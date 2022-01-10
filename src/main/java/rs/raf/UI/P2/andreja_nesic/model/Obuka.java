@@ -14,11 +14,11 @@ public class Obuka {
     private int obukaId;
 
     @Basic
-    @Column(name = "procedura")
+    @Column(name = "procedura", nullable = false)
     private String procedura;
 
     @Basic
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private Date pocetak;
 
     @Basic
@@ -30,11 +30,11 @@ public class Obuka {
     private String sertifikat;
 
     @Basic
-    @Column(name = "kod")
+    @Column(name = "kod", nullable = false)
     private String kod;
 
     @ManyToOne
-    @JoinColumn(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     public int getObukaId() {

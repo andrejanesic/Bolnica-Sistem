@@ -14,11 +14,11 @@ public class Zaposleni {
     private int zaposleniId;
 
     @Basic
-    @Column(name = "ime")
+    @Column(name = "ime", nullable = false)
     private String ime;
 
     @Basic
-    @Column(name = "prezime")
+    @Column(name = "prezime", nullable = false)
     private String prezime;
 
     public int getZaposleniId() {

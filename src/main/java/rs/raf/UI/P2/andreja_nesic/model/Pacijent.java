@@ -13,15 +13,15 @@ public class Pacijent {
     private int pacijentId;
 
     @Basic
-    @Column(name = "ime")
+    @Column(name = "ime", nullable = false)
     private String ime;
 
     @Basic
-    @Column(name = "prezime")
+    @Column(name = "prezime", nullable = false)
     private String prezime;
 
     @Basic
-    @Column(name = "jmbg")
+    @Column(name = "jmbg", nullable = false)
     private String jmbg;
 
     @Basic
@@ -41,11 +41,11 @@ public class Pacijent {
     private String postanskiBroj;
 
     @Basic
-    @Column(name = "drzava")
+    @Column(name = "drzava", nullable = false)
     private String drzava;
 
     @Basic
-    @Column(name = "telefon")
+    @Column(name = "telefon", nullable = false)
     private String telefon;
 
     public int getPacijentId() {

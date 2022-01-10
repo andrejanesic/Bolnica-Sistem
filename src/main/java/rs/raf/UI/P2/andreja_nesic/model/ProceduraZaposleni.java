@@ -12,12 +12,12 @@ public class ProceduraZaposleni {
 
     @ManyToOne
     @MapsId("proceduraId")
-    @JoinColumn(name = "procedura_id")
+    @JoinColumn(name = "procedura_id", referencedColumnName = "procedura_id")
     private Procedura procedura;
 
     @ManyToOne
     @MapsId("zaposleniId")
-    @JoinColumn(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     public ProceduraZaposleniPK getId() {

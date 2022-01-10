@@ -13,11 +13,11 @@ public class Soba {
     private int sobaId;
 
     @Basic
-    @Column(name = "broj")
+    @Column(name = "broj", nullable = false)
     private String broj;
 
     @ManyToOne
-    @JoinColumn(name = "blok_id")
+    @JoinColumn(name = "blok_id", referencedColumnName = "blok_id")
     private Blok blok;
 
     public int getSobaId() {

@@ -14,7 +14,7 @@ public class Dijagonza {
     private int dijagnozaId;
 
     @Basic
-    @Column(name = "pocetak")
+    @Column(name = "pocetak", nullable = false)
     private Date pocetak;
 
     @Basic
@@ -22,15 +22,15 @@ public class Dijagonza {
     private Date kraj;
 
     @Basic
-    @Column(name = "sifra")
+    @Column(name = "sifra", nullable = false)
     private String sifra;
 
     @Basic
-    @Column(name = "ime")
+    @Column(name = "ime", nullable = false)
     private String ime;
 
     @ManyToOne
-    @JoinColumn(name = "pacijent_id")
+    @JoinColumn(name = "pacijent_id", referencedColumnName = "pacijent_id")
     private Pacijent pacijent;
 
     public int getDijagnozaId() {
