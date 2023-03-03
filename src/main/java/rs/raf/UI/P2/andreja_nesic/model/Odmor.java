@@ -15,7 +15,7 @@ public class Odmor {
 
     @Basic
     @Column(name = "pocetak", nullable = false)
-    private double pocetak;
+    private Date pocetak;
 
     @Basic
     @Column(name = "kraj", nullable = false)
@@ -33,11 +33,11 @@ public class Odmor {
         this.odmorId = odmorId;
     }
 
-    public double getPocetak() {
+    public Date getPocetak() {
         return pocetak;
     }
 
-    public void setPocetak(double pocetak) {
+    public void setPocetak(Date pocetak) {
         this.pocetak = pocetak;
     }
 
@@ -62,7 +62,7 @@ public class Odmor {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Odmor odmor = (Odmor) o;
-        return odmorId == odmor.odmorId && Double.compare(odmor.pocetak, pocetak) == 0 && Objects.equals(kraj, odmor.kraj) && Objects.equals(zaposleni, odmor.zaposleni);
+        return odmorId == odmor.odmorId && Objects.equals(pocetak, odmor.pocetak) && Objects.equals(kraj, odmor.kraj) && Objects.equals(zaposleni, odmor.zaposleni);
     }
 
     @Override

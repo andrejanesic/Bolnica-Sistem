@@ -12,12 +12,12 @@ public class ReceptLekar {
 
     @ManyToOne
     @MapsId("zaposleniId")
-    @Column(name = "zaposleni_id")
+    @JoinColumn(name = "zaposleni_id", referencedColumnName = "zaposleni_id")
     private Zaposleni zaposleni;
 
     @ManyToOne
     @MapsId("receptId")
-    @Column(name = "recept_id")
+    @JoinColumn(name = "recept_id", referencedColumnName = "recept_id")
     private Recept recept;
 
     public ReceptLekarPK getId() {

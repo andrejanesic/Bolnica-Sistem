@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "procedura_lekar")
+@Table(name = "procedura_zaposleni")
 public class ProceduraZaposleni {
 
     @EmbeddedId
