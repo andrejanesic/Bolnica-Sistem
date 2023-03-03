@@ -1,0 +1,528 @@
+{
+	"info": {
+		"_postman_id": "0839c64d-1fef-4cd4-80b1-02434a87e1ea",
+		"name": "[UI] P2 andreja_nesic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pacijent",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacijentId\": 0,\r\n  \"ime\": \"String\",\r\n  \"prezime\": \"String\",\r\n  \"jmbg\": \"String\",\r\n  \"ulica\": \"String\",\r\n  \"broj\": \"String\",\r\n  \"grad\": \"String\",\r\n  \"postanskiBroj\": \"String\",\r\n  \"drzava\": \"String\",\r\n  \"telefon\": \"String\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}pacijent/",
+							"host": [
+								"{{origin}}pacijent"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"pacijentId\": 0,\r\n  \"ime\": \"String\",\r\n  \"prezime\": \"String\",\r\n  \"jmbg\": \"String\",\r\n  \"ulica\": \"String\",\r\n  \"broj\": \"String\",\r\n  \"grad\": \"String\",\r\n  \"postanskiBroj\": \"String\",\r\n  \"drzava\": \"String\",\r\n  \"telefon\": \"String\",\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}pacijent/0",
+							"host": [
+								"{{origin}}pacijent"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}pacijent/0",
+							"host": [
+								"{{origin}}pacijent"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lek",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{origin}}lek/page-query",
+							"host": [
+								"{{origin}}lek"
+							],
+							"path": [
+								"page-query"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"lekId\": 0,\r\n  \"naziv\": \"String\",\r\n  \"proizvodjac\": \"String\",\r\n  \"grupa\": \"String\",\r\n  \"tip\": \"String\",\r\n  \"sastav\": \"String\",\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}lek/",
+							"host": [
+								"{{origin}}lek"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"lekId\": 0,\r\n  \"naziv\": \"String\",\r\n  \"proizvodjac\": \"String\",\r\n  \"grupa\": \"String\",\r\n  \"tip\": \"String\",\r\n  \"sastav\": \"String\",\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}lek/0",
+							"host": [
+								"{{origin}}lek"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}lek/0",
+							"host": [
+								"{{origin}}lek"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dijagnoza",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{origin}}dijagonza/page-query",
+							"host": [
+								"{{origin}}dijagonza"
+							],
+							"path": [
+								"page-query"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dijagnozaId\": 0,\r\n  \"pocetak\": \"2021-01-05\",\r\n  \"kraj\": \"2022-01-05\",\r\n  \"sifra\": \"String\",\r\n  \"ime\": \"String\",\r\n  \"pacijent\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}dijagonza/",
+							"host": [
+								"{{origin}}dijagonza"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"dijagnozaId\": 0,\r\n  \"pocetak\": \"2021-01-05\",\r\n  \"kraj\": \"2022-01-05\",\r\n  \"sifra\": \"String\",\r\n  \"ime\": \"String\",\r\n  \"pacijent\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}dijagonza/0",
+							"host": [
+								"{{origin}}dijagonza"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}dijagonza/0",
+							"host": [
+								"{{origin}}dijagonza"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Procedura",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{origin}}procedura/page-query",
+							"host": [
+								"{{origin}}procedura"
+							],
+							"path": [
+								"page-query"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"proceduraId\": 0,\r\n  \"tip\": \"String\",\r\n  \"pocetak\": \"2021-01-01\",\r\n  \"kraj\": \"2021-01-01\",\r\n  \"ime\": \"String\",\r\n  \"pacijent\": 0,\r\n  \"soba\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}procedura/",
+							"host": [
+								"{{origin}}procedura"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"proceduraId\": 0,\r\n  \"tip\": \"String\",\r\n  \"pocetak\": \"2021-01-01\",\r\n  \"kraj\": \"2021-01-01\",\r\n  \"ime\": \"String\",\r\n  \"pacijent\": 0,\r\n  \"soba\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}procedura/0",
+							"host": [
+								"{{origin}}procedura"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}dijagonza/0",
+							"host": [
+								"{{origin}}dijagonza"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Osiguranje",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{origin}}osiguranje/page-query",
+							"host": [
+								"{{origin}}osiguranje"
+							],
+							"path": [
+								"page-query"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"osiguranjeId\": 0,\r\n  \"tip\": \"String\",\r\n  \"broj\": \"String\",\r\n  \"pacijent\": 0,\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}osiguranje/",
+							"host": [
+								"{{origin}}osiguranje"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"osiguranjeId\": 0,\r\n  \"tip\": \"String\",\r\n  \"broj\": \"String\",\r\n  \"pacijent\": 0,\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}osiguranje/0",
+							"host": [
+								"{{origin}}osiguranje"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{origin}}osiguranje/0",
+							"host": [
+								"{{origin}}osiguranje"
+							],
+							"path": [
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "origin",
+			"value": "http://localhost:8080/",
+			"type": "string"
+		}
+	]
+}
